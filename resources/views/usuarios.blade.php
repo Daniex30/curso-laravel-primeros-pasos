@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bienvenido</title>
+    <title>Usuarios</title>
 </head>
 <body>
-    <h1>Bienvenido</h1>
-    <a href="/contacto">Contacto</a>
-    <br>
-    <a href="{{ route('contacto')}}">Contacto (Ruta con nombre)</a>
+    {{ $user->id }}
+    {{ $user->name }}
+    {{ $user->email }}
+
+    {{ $user->password }}
+
+    {{ $user->created_at }}
+
 </body>
 </html>
